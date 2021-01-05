@@ -1,0 +1,25 @@
+{
+    "manifest_version":2,
+    "name":"Budget Manager",
+    "version":"1.0",
+    "description":"Tracks overall spendings.Browser action extension. Accept spendings. Display total spending. Limit - notify if reached. Option to reset total and limit.",
+    "icons":{
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "16":"icon16.png"
+    },
+    "browser_action":{
+        "default_icon":"icon48.png",
+        "default_popup":"popup.htm"
+    },
+    "options_page":"options.htm",
+    "background":{
+        "scripts": ["eventPage.js"],   
+        "persistent": false
+    },
+    "permissions":[
+        "storage",
+        "notifications",
+        "contextMenus"
+     ]
+}
